@@ -1,16 +1,20 @@
 package _03_print_and_popups._4_quiz_game;
 
+import javax.swing.JOptionPane;
+
 public class QuizGame {
 	public static void main(String[] args) {
 		
 		// Create a variable to hold the user's score. Set it equal to zero. 
-		
+		int score = 0;
 		// ASK A QUESTION AND CHECK THE ANSWER
-		
+	String input =	JOptionPane.showInputDialog("what game is STEVE from");
 				// 2.  Ask the user a question 
 				
 				// 3.  Use an if statement to check if their answer is correct
-				
+				if(input.equals("minecraft")) {
+					score = +1;
+				}
 				// 4.  if the user's answer was correct, add one to their score 
 		
 		// MAKE MORE QUESTIONS. Ask more questions by repeating the above 
